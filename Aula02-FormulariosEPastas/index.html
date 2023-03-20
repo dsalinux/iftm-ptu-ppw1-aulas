@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Formulários e Páginas</title>
+</head>
+<body>
+    <marquee behavior="alternate" direction="up">
+        <h1>Indicação de emprego</h1>
+    </marquee>
+    <ul>
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome">
+        <br/>
+        <label for="idade">Idade</label>
+        <input type="number" id="idade">
+        <br/>
+        <input type="checkbox" id="concluiu">
+        <label for="concluiu">Concluiu graduação</label>
+        <br/>
+        <fieldset title="Cargo pretendido">
+            <legend>Cargo pretendido</legend>
+            <input type="radio" name="cargo" id="prog-junior">
+            <label for="prog-junior">Programador Junior</label>
+            <br/>
+            <input type="radio" name="cargo" id="prog-pleno">
+            <label for="prog-pleno">Programador Pleno</label>
+            <br/>
+            <input type="radio" name="cargo" id="prog-senior">
+            <label for="prog-senior">Programador Senior</label>
+            <br/>
+            <input type="radio" name="cargo" id="web-designer">
+            <label for="web-designer">Web Designer</label>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Cancelar">
+    </form>
+</body>
+</html>

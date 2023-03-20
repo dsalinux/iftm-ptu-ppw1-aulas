@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #79b4e9;
+    height: 60px;
+}
+
+.menu li {
+    float: left;
+}
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 30px;
+    display: block;
+    line-height: 60px;
+    transition:0.4s;
+}
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: red;
+    padding: 0 50px;
+}
