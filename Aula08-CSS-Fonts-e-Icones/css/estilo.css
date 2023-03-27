@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-R.ttf');
+}
+
+body {
+
+}
+.google-fonts {
+    font-family: 'Caveat', cursive;   
+}
+.ubuntu {
+    font-family: 'Ubuntu';
+}
+.tamanho1 {
+    color: red;
+    font-size: 16px;
+}
+.tamanho2 {
+    color: red;
+    font-size: 24px;
+}
+.tamanho3 {
+    color: red;
+    font-size: 32px;
+}
+.tamanho4 {
+    color: red;
+    font-size: 40px;
+}
+.animacao {
+    color: red;
+    animation: coracao 1s infinite;
+}
+
+@keyframes coracao {
+    0% {
+        font-size: 16px;
+    }   
+    50% {
+        font-size: 32px;
+    }
+    100% {
+        font-size: 16px;
+    }  
+}
