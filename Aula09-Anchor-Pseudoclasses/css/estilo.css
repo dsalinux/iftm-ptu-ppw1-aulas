@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.voltar-topo {
+    position: sticky;
+    top: 80%;
+    left: 80%;
+    background-color: #5599ff;
+    padding: 10px;
+}
+.voltar-topo::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(80% - 1px);
+    width: 100%;
+    border-bottom: 1px solid red;
+}
