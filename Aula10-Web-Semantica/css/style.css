@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.cabecalho, header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.menulateral, aside {
+    background-color: #ccc;
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+.principal, main {
+    background-color: #fff;
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+.rodape, footer {
+    background-color: #000;
+    color: #fff;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
