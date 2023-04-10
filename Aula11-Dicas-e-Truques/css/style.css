@@ -1,0 +1,42 @@
+.alinha img {
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+}
+
+.alinha h1 {
+    text-align: center;
+    background-color: #3577BE;
+}
+
+.flexivel {
+    display: flex;
+    background-color: grey;
+    height: 300px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.flexivel img {
+    width: 100px;
+}
+
+.flex-texto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.posicao {
+    position: relative;
+}
+.posicao img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+}
+.posicao h1 {
+    text-align: center;
+    line-height: 100px;
+}
