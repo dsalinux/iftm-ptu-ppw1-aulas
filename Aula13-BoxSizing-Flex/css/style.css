@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 body { 
     margin: 0;
+    padding-bottom: 400px;
 }
 
 /* Index */
@@ -40,6 +44,7 @@ body {
     border-radius: 10px;
     position: relative;
     margin: 20px;
+    box-sizing: content-box;
 }
 #noboxsizing_realsize {
     bottom: 0;
@@ -83,7 +88,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;/*Como é organizado os elementos*/
+    justify-content: space-evenly;/*Como é organizado os elementos*/
 }
 #flex5 {
     display: flex;
