@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body { 
+    margin: 0;
+}
+.cabecalho-estatico {
+    height: 60px;
+    background-color: #4241a0;
+}
+.corpo-estatico {
+    min-height: calc(100vh - 120px);
+    background-color: #f2f2f2;
+}
+.rodape-estatico {
+    height: 60px;
+    background-color: #4241a0;
+}
+
+.container-flex {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+}
+.cabecalho-flex {
+    background-color: #4241a0;
+}
+.corpo-flex {
+    background-color: #f2f2f2;
+    flex: 1;
+}
+.rodape-flex {
+    background-color: #4241a0;
+}
