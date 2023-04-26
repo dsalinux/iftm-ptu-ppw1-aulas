@@ -1,0 +1,22 @@
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 200px;
+    height: 400px;
+    gap: 10px;
+}
+.calculadora div {
+    border: 1px solid gray;
+}
+
+.calculadora .visor {
+    grid-column: 1 / 5;
+}
+.calculadora .zero {
+    grid-column: 1 / 3;
+}
+
+.calculadora .igual {
+    grid-row: 5 / 7;
+    grid-column: 4 / 5;
+}
