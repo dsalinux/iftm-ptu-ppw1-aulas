@@ -8,18 +8,29 @@ ul, p {
 body {
     height: 100vh;
     margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "menu      conteudo"
+        "rodape    rodape";
+    grid-template-columns: 200px auto;
+    grid-template-rows: 50px auto 50px;
 }
 
 header {
+    grid-area: cabecalho;
     background-color: #2196f3;
 }
 
 main {
+    grid-area: conteudo;
     background-color: #eee;
 }
 aside {
+    grid-area: menu;
     background-color: #3f51b5;
 }
 footer {
+    grid-area: rodape;
     background-color: #2196f3;
 }
