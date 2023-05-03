@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+ul, p {
+    font-size: 1.5em;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #2196f3;
+}
+
+main {
+    background-color: #eee;
+}
+aside {
+    background-color: #3f51b5;
+}
+footer {
+    background-color: #2196f3;
+}

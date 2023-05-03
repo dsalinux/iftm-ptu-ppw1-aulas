@@ -16,50 +16,97 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.2em;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            height: 100vh;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .atividades {
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            box-shadow: 0 0 10px #333;
+            width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: white;
         }
         .menu {
             list-style: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); ;
+            column-gap: 0px;
         }
 
         .menu li a {
             display: block;
-            padding: 10px;
+            padding: 10px 20px;
             text-decoration: none;
             height: 100%;
-            color: #333;
+            min-height: 50px;
+            color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid transparent;
+            transition: all 0.1s ease-in-out;
         }
         .menu li a:hover {
-            background-color: #777;
-            color: #fff;
+            background-color: #2196f377;
+            border: 1px solid #2196f399;
+            text-shadow: 0 0 10px #fff;
+            animation: rotate 0.1s ease-out 1;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            33% {
+                transform: rotateZ(-5deg)
+            }
+            66% {
+                transform: rotateZ(0deg)
+            }
+            100% {
+                transform: rotateZ(5deg)
+            }
         }
         
     </style>
-    <h1>Todas as atividades desenvolvidas em sala de aula</h1>
-    <ul class="menu">
-        <li><a href="Aula01-HelloWorld/"><i class="fa-solid fa-earth-americas"></i> Aula 01 - Hello World</a></li>
-        <li><a href="Aula02-FormulariosEPastas/"><i class="fa-solid fa-earth-americas"></i> Aula 02 - Formulários e Pastas</a></li>
-        <li><a href="Aula03-HTML-e-CSS/"><i class="fa-solid fa-earth-americas"></i> Aula 03 - Html e CSS</a></li>
-        <li><a href="Aula04-CSS_Externo/"><i class="fa-solid fa-earth-americas"></i> Aula 04 - CSS Externo</a></li>
-        <li><a href="Aula05-Menu-Submenu/"><i class="fa-solid fa-earth-americas"></i> Aula 05 - Menu e Submenu</a></li>
-        <li><a href="Aula06-Posicionamento/"><i class="fa-solid fa-earth-americas"></i> Aula 06 - Posicionamento</a></li>
-        <li><a href="Aula07-Seletores-e-Posicionamento/"><i class="fa-solid fa-earth-americas"></i> Aula 07 - Seletores e Posicionamento</a></li>
-        <li><a href="Aula08-CSS-Fonts-e-Icones/"><i class="fa-solid fa-earth-americas"></i> Aula 08 - CSS, Fonts e Icones</a></li>
-        <li><a href="Aula09-Anchor-Pseudoclasses/"><i class="fa-solid fa-earth-americas"></i> Aula 09 - Anchor Pseudoclasses</a></li>
-        <li><a href="Aula10-Web-Semantica/"><i class="fa-solid fa-earth-americas"></i> Aula 10 Web Semântica</a></li>
-        <li><a href="Aula11-Dicas-e-Truques/"><i class="fa-solid fa-earth-americas"></i> Aula 11 - Dicas e Truques</a></li>
-        <li><a href="Aula12-Unidades-de-Medida/"><i class="fa-solid fa-earth-americas"></i> Aula 12 - Unidades de Medida</a></li>
-        <li><a href="Aula13-BoxSizing-Flex/"><i class="fa-solid fa-earth-americas"></i> Aula 13 - Box Sizing e Flex</a></li>
-        <li><a href="Aula14-Layout-Flex/"><i class="fa-solid fa-earth-americas"></i> Aula 14 - Layout Flex</a></li>
-        <li><a href="Aula15-GridCSS/"><i class="fa-solid fa-earth-americas"></i> Aula 15 - Grid CSS</a></li>
-    </ul>
+    <div class="atividades">
+        <h1>Todas as atividades desenvolvidas em sala de aula</h1>
+        <ul class="menu">
+            <li><a href="Aula01-HelloWorld/"><i class="fa-solid fa-earth-americas"></i> Aula 01 - Hello World</a></li>
+            <li><a href="Aula02-FormulariosEPastas/"><i class="fa-solid fa-earth-americas"></i> Aula 02 - Formulários e Pastas</a></li>
+            <li><a href="Aula03-HTML-e-CSS/"><i class="fa-solid fa-earth-americas"></i> Aula 03 - Html e CSS</a></li>
+            <li><a href="Aula04-CSS_Externo/"><i class="fa-solid fa-earth-americas"></i> Aula 04 - CSS Externo</a></li>
+            <li><a href="Aula05-Menu-Submenu/"><i class="fa-solid fa-earth-americas"></i> Aula 05 - Menu e Submenu</a></li>
+            <li><a href="Aula06-Posicionamento/"><i class="fa-solid fa-earth-americas"></i> Aula 06 - Posicionamento</a></li>
+            <li><a href="Aula07-Seletores-e-Posicionamento/"><i class="fa-solid fa-earth-americas"></i> Aula 07 - Seletores e Posicionamento</a></li>
+            <li><a href="Aula08-CSS-Fonts-e-Icones/"><i class="fa-solid fa-earth-americas"></i> Aula 08 - CSS, Fonts e Icones</a></li>
+            <li><a href="Aula09-Anchor-Pseudoclasses/"><i class="fa-solid fa-earth-americas"></i> Aula 09 - Anchor Pseudoclasses</a></li>
+            <li><a href="Aula10-Web-Semantica/"><i class="fa-solid fa-earth-americas"></i> Aula 10 Web Semântica</a></li>
+            <li><a href="Aula11-Dicas-e-Truques/"><i class="fa-solid fa-earth-americas"></i> Aula 11 - Dicas e Truques</a></li>
+            <li><a href="Aula12-Unidades-de-Medida/"><i class="fa-solid fa-earth-americas"></i> Aula 12 - Unidades de Medida</a></li>
+            <li><a href="Aula13-BoxSizing-Flex/"><i class="fa-solid fa-earth-americas"></i> Aula 13 - Box Sizing e Flex</a></li>
+            <li><a href="Aula14-Layout-Flex/"><i class="fa-solid fa-earth-americas"></i> Aula 14 - Layout Flex</a></li>
+            <li><a href="Aula15-GridCSS/"><i class="fa-solid fa-earth-americas"></i> Aula 15 - Grid CSS</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
