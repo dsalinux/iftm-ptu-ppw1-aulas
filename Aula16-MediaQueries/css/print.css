@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+td {
+    padding: 10px;
+}
+
+@media print {
+    td {
+        font-size: 3em;
+    }
+}
