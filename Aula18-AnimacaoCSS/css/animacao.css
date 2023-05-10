@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.bola {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 3px solid orange;
+    border-radius: 50%;
+    top: 40px;
+    left: 40px;
+    position: fixed;
+    animation-name: bolinha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes bolinha {
+    from {
+        top: 40px;
+    }
+    to {
+        top: 300px;
+        background-color: red;
+        transform: rotateY(180deg);
+    }
+}
+
+.load {
+    border-top: 3px solid red;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 40px;
+    left: 300px;
+    border-radius: 50%;
+    animation: rotacao 1s infinite linear;
+}
+
+@keyframes rotacao {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

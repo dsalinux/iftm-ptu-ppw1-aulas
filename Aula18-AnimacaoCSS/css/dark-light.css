@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    background-color: #eee;
+    transition: background 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.dark {
+    background-color: rgb(71, 0, 111);
+}
+.altera {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.ceu {
+    display: block;
+    height: 120px;
+    width: 250px;
+    background-color: rgb(36, 32, 45);
+    border-radius: 80px;
+    padding: 20px;
+    position: relative;
+    transition: background 1s;
+    overflow: hidden;
+}
+.altera input[type='checkbox']:checked + .ceu{
+    background-color: #0cf;
+}
+.astro {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    transition: left 1s;
+    transform: rotate(180deg);
+    top: 30px;
+    box-shadow: inset 20px 20px 0 rgba(0,0,0,0.1);
+    z-index: 2;
+}
+.altera input[type='checkbox'] {
+    display: none;
+}
+.altera input[type='checkbox']:checked + .ceu .astro {
+    position: absolute;
+    left: 30px;
+    background-color: #fc6;
+}
+.nuvem {
+    left: -150px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s, left 0.8s;
+}
+.altera input[type='checkbox']:checked + .ceu .nuvem {
+    opacity: 1;
+    left: 100px;
+}
+.nuvem .n {
+    display: none;
+    z-index: 1;
+}
+.altera input[type='checkbox']:checked + .ceu .nuvem .n {
+    display: block;
+    position: absolute;
+    background-color: #eee;
+    border-radius: 50%;
+    --pos-left: 20%;
+}
+.nuvem .n:nth-child(1) {
+    width: 80px;
+    height: 40px;
+    top: 60px;
+    left: calc(var(--pos-left) + 20px);
+    z-index: 1;
+}
+.nuvem .n:nth-child(2) {
+    width: 60px;
+    height: 40px;
+    top: 50px;
+    left: var(--pos-left);
+}
+.nuvem .n:nth-child(3) {
+    width: 60px;
+    height: 40px;
+    top: 50px;
+    left: calc(var(--pos-left) + 70px);
+    z-index: 1;
+}
+.nuvem .n:nth-child(4) {
+    width: 50px;
+    height: 30px;
+    top: 40px;
+    left: calc(var(--pos-left) + 40px);
+}
+.altera input[type='checkbox']:not(:checked) + .ceu .astro  {
+    background-color: #eee;
+    left: 160px;
+    position: absolute;
+}
+.astro .cratera {
+    transition: 0.3s;
+    width: 0;
+    height: 0;
+}
+.altera input[type='checkbox']:not(:checked) + .ceu .astro .cratera {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    box-shadow: inset -2px -2px 0px rgba(0,0,0,0.3);
+    position: absolute;
+    opacity: 0;
+
+}
+.altera input[type='checkbox']:not(:checked) + .ceu .astro .cratera:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    top: 30%;
+    left: 40%;
+    opacity: 1;
+}
+.altera input[type='checkbox']:not(:checked) + .ceu .astro .cratera:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    top: 70%;
+    left: 20%;
+    opacity: 1;
+}
+.altera input[type='checkbox']:not(:checked) + .ceu .astro .cratera:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 60%;
+    opacity: 1;
+}
+
+.estrelas{
+    color: white;
+    position: absolute;
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+.altera input[type='checkbox']:checked + .ceu .estrelas {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.estrelas .estrela{
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    font-size: var(--s);
+}

@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cenario {
+    width: 800px;
+    height: 904px;
+    position: relative;
+}
+[class^='parallax'] {
+    width: 800px;
+    height: 904px;
+    position: absolute;
+    top: 0;
+    background-size: 200%;
+    background-position-y: 100%;
+}
+
+.parallax1 {
+    background-image: url('../imagens/parallax01/layer_01_2048\ x\ 1546.png');
+}
+.parallax2 {
+    background-image: url('../imagens/parallax01/layer_02_2048\ x\ 1546.png');
+    animation: parallax 60s infinite linear;
+}
+.parallax3 {
+    background-image: url('../imagens/parallax01/layer_03_2048\ x\ 1546.png');
+    animation: parallax 40s infinite linear;
+}
+.parallax4 {
+    background-image: url('../imagens/parallax01/layer_04_2048\ x\ 1546.png');
+    animation: parallax 20s infinite linear;
+}
+.parallax5 {
+    background-image: url('../imagens/parallax01/layer_05_2048\ x\ 1546.png');   
+    animation: parallax 5s infinite linear;
+}
+@keyframes parallax {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 200%;
+    }
+}

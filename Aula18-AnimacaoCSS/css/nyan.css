@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.ceu {
+    height: 100vh;
+    background-image: url(../imagens/nyancat/background.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: scroll 5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nyan {
+    background-image: url(../imagens/nyancat/nyancat-spritesheet.gif);
+    
+    width: 300px;
+    height: 137px;
+    animation: sprite2 0.2s linear infinite;
+}
+@keyframes sprite {
+    0%{
+        background-position-x: 0;
+    }
+    19.9%{
+        background-position-x: 0;
+    }
+    20% {
+        background-position-x: 300px;
+    }
+    39.9%{
+        background-position-x: 300px;
+    }
+    40% {
+        background-position-x: 600px;
+    }
+    59.9%{
+        background-position-x: 600px;
+    }
+    60% {
+        background-position-x: 900px;
+    }
+    79.9%{
+        background-position-x: 900px;
+    }
+    80% {
+        background-position-x: 1200px;
+    }
+    99.9%{
+        background-position-x: 1200px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+@keyframes sprite2 {
+    0%{
+        background-image: url(../imagens/nyancat/nyan1.png);
+    }
+
+    20% {
+        background-image: url(../imagens/nyancat/nyan2.png);
+    }
+
+    40% {
+        background-image: url(../imagens/nyancat/nyan3.png);
+    }
+
+    60% {
+        background-image: url(../imagens/nyancat/nyan4.png);
+    }
+
+    80% {
+        background-image: url(../imagens/nyancat/nyan5.png);
+    }
+
+    100% {
+        background-image: url(../imagens/nyancat/nyan1.png);
+    }
+}
+@keyframes scroll {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
