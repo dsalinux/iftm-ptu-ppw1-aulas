@@ -13,9 +13,12 @@ body {
 
 main {
     flex: 1;
+    display: grid;
+    grid-template-columns: max-content auto;
 }
 
 footer {
-    background-color: #ccc;
-    padding: 10px;
+    background-color: #8AA1B1;
+    padding: 20px;
+    font-size: 1.8em;
 }
